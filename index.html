@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <span class="logo-purple">Job</span><span class="logo-orange">Hunt</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#About">Apply</a></li>
+      <li><a href="#jobs">Jobs</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="Review">Review</a></li>
+    </ul>
+     <a class="register-btn" href="register.html">Register</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-2">
+    <div class="hero-label"> 
+      <img src="/images/breifcase.png" alt="" class="breifcase-png">
+      No.1 Job Hunt Website 
+    </div>
+    <h1>
+      Search, Apply & <br>
+      Get Your 
+      <span class="logo-purple">Dream Job</span>
+    </h1>
+    <p>
+      Your future starts here. Discover countless opportunities, take action by applying to jobs that match your skills and aspirations,<br>
+      and transform your career.
+    </p>
+
+    <div class="action-buttons">
+      <!-- ✅ Browse button now opens browse.html -->
+      <div class="how-it-works" style="display: flex; align-items: center; gap: 10px;">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+            <circle cx="19" cy="19" r="19" fill="#6c48fa"/>
+            <polygon points="15,12 28,19 15,26" fill="#fff"/>
+        </svg>
+        <span class="how-works-text" style="vertical-align: middle; display: inline-block;">How It Works?</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About" class="hero">
+    <h1>Get Hired in 4 <span class="highlights">Quick Easy Steps</span></h1>
+    <p>
+      Follow Our Simple, Step-by-Step Guide to Quickly Land Your Dream Job and Start Your New Career Journey.
+    </p>
+    <div class="steps">
+      <div class="step-card">
+        <img src="/images/user.png" alt="" class="step-card-icon">
+        <a href="register.html" style="text-decoration: none;">
+        <h3>Create an account</h3> 
+        <p>Sign up with just a few clicks to unlock exclusive access to a world of job opportunities and landing your dream job. It's quick, easy, and completely free.</p>
+        </a>
+      </div>
+      <div class="step-card">
+        <img src="/images/search.png" alt="" class="step-card-icon">
+        <h3>Build your profile</h3> 
+        <p>Create a standout profile that showcases your skills and experience. A complete profile increases your chances of getting noticed by top employers.</p>
+      </div>
+      <div class="step-card">
+        <img src="/images/discard.png" alt="" class="step-card-icon">
+        <h3>Upload CV / Resume</h3>
+        <p>Upload your CV or resume to let employers discover your qualifications. A well-crafted document helps you stand out and increases your chances of getting shortlisted for interviews.</p>
+      </div>
+      <div class="step-card">
+        <img src="/images/portfolio.png" alt="" class="step-card-icon">
+        <h3>Get Job</h3>
+        <p>Apply to jobs that match your profile and get hired by top companies. Track your application status and receive interview calls directly through our platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Categories -->
+  <section id="jobs" class="hero-3">
+    <h1><span class="logo-purple">Countless Career Options</span> Are Waiting For <br>
+      You To Explore</h1>
+    <p>Discover a World of Exciting Opportunities and Endless Possibilities, and <br>
+      Find the Perfect Career Path to Shape Your Future.</p>
+    <div class="card-grid">
+      <div class="step-card-2">
+        <img src="/images/web-design.png" alt="" class="step-card-icon">
+        <h3>Design</h3>
+        <p>200+ job openings</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/sales.png" alt="" class="step-card-icon">
+        <h3>Sales</h3>
+        <p>350+ jobs openings</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/social-media.png" alt="" class="step-card-icon">
+        <h3>Marketing</h3>
+        <p>500+ jobs opening</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/social.png" alt="" class="step-card-icon">
+        <h3>Logistics / Delivery</h3>
+        <p>1k + jobs opening</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/salary.png" alt="" class="step-card-icon">
+        <h3>Finance</h3>
+        <p>200+ jobs opening</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/electric-car.png" alt="" class="step-card-icon">
+        <h3>Automobile</h3>
+        <p>250+ jobs opening</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/user-setting.png" alt="" class="step-card-icon">
+        <h3>Admin</h3>
+        <p>100+ jobs opening</p>
+      </div>
+      <div class="step-card-2">
+        <img src="/images/architect.png" alt="" class="step-card-icon">
+        <h3>Construction</h3>
+        <p>500+ jobs opening</p>
+      </div>
+      <button class="Browse-job-btn" onclick="window.location.href='browse.html'">Browse Job</button>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section id="service" class="hero-4">
+    <h1>Latest & Top <span class="logo-purple">Job Openings</span></h1>
+    <p>Discover Exciting New Opportunities and High-Demand Positions Available Now in Top Industries and Companies</p>
+  
+    <div class="card-grid-2">
+      <!-- Figma -->
+      <div class="step-card-3">
+        <a href="figma.html" style="text-decoration: none; color: black;">
+          <div class="card-header">
+            <img src="/images/figma.png" alt="Figma" class="card-avatar">
+            <div>
+              <div class="company-name">Figma</div>
+              <div class="location">USA</div>
+            </div>
+          </div>
+          <div class="job-title">Senior Product Engineer</div>
+          <div class="job-desc">
+            Lead the development of innovative product solutions, leveraging your expertise in engineering and product management to drive success.
+          </div>
+          <div class="card-labels">
+            <span class="card-badge badge-blue">12 Positions</span>
+            <span class="card-badge badge-orange">Full Time</span>
+            <span class="card-badge badge-mint">$145,000/Year</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Twitter -->
+      <div class="step-card-3">
+        <a href="twitter.html" style="text-decoration: none; color: black;">
+          <div class="card-header">
+            <img src="/images/twitter (1).png" alt="Twitter" class="card-avatar">
+            <div>
+              <div class="company-name">Twitter</div>
+              <div class="location">USA</div>
+            </div>
+          </div>
+          <div class="job-title">Frontend Developer</div>
+          <div class="job-desc">
+            Build responsive and scalable web interfaces, collaborating with cross-functional teams to deliver seamless user experiences.
+          </div>
+          <div class="card-labels">
+            <span class="card-badge badge-blue">10 Positions</span>
+            <span class="card-badge badge-orange">Full Time</span>
+            <span class="card-badge badge-mint">$110,000/Year</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="step-card-3">
+        <a href="linked-in.html" style="text-decoration: none; color: black;">
+          <div class="card-header">
+            <img src="/images/linkedin.png" alt="LinkedIn" class="card-avatar">
+            <div>
+              <div class="company-name">LinkedIn</div>
+              <div class="location">USA</div>
+            </div>
+          </div>
+          <div class="job-title">Backend Engineer</div>
+          <div class="job-desc">
+            Develop robust backend systems and APIs, ensuring high performance and reliability for millions of users worldwide.
+          </div>
+          <div class="card-labels">
+            <span class="card-badge badge-blue">7 Positions</span>
+            <span class="card-badge badge-orange">Full Time</span>
+            <span class="card-badge badge-mint">$130,000/Year</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="step-card-3">
+        <a href="facebook.html" style="text-decoration: none; color: black;">
+          <div class="card-header">
+            <img src="/images/facebook.png" alt="Facebook" class="card-avatar">
+            <div>
+              <div class="company-name">Facebook</div>
+              <div class="location">USA</div>
+            </div>
+          </div>
+          <div class="job-title">UI/UX Designer</div>
+          <div class="job-desc">
+            Create engaging and user-friendly interfaces, collaborating with product teams to enhance user experience across Facebook platforms.
+          </div>
+          <div class="card-labels">
+            <span class="card-badge badge-blue">8 Positions</span>
+            <span class="card-badge badge-orange">Full Time</span>
+            <span class="card-badge badge-mint">$120,000/Year</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="step-card-3">
+        <a href="youtube.html" style="text-decoration: none; color: black;">
+          <div class="card-header">
+            <img src="/images/youtube (1).png" alt="YouTube" class="card-avatar">
+            <div>
+              <div class="company-name">YouTube</div>
+              <div class="location">USA</div>
+            </div>
+          </div>
+          <div class="job-title">Video Content Strategist</div>
+          <div class="job-desc">
+            Develop and execute content strategies to grow audience engagement, working closely with creators and marketing teams at YouTube.
+          </div>
+          <div class="card-labels">
+            <span class="card-badge badge-blue">5 Positions</span>
+            <span class="card-badge badge-orange">Full Time</span>
+            <span class="card-badge badge-mint">$110,000/Year</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+<section id="Review" class="review-section">
+  <h2 class="section-title">WebSite review</h2>
+
+  <div class="review-card">
+    <div class="review-image">
+      <img src="images/monitor.png" alt="Reviewer photo">
+    </div>
+
+    <div class="review-content">
+      <h3>Meena</h3>
+      <p class="review-role">Human Resource at Apple</p>
+      <p class="review-text">
+        Hello this is MEENA working as an Human Resource Manager at APPLE at SEATTLE there was a tough time in selecting jobs and reciving offers & job browsing in INDIA <br>
+        so i just used this JOBHUNT website to filter out jobs and work as an HR professinoal in USA at SEATTLE thanks for providing this wonderful oppertunity from team <br>
+        <span class="logo-purple">JOB</span> <span class="logo-orange">HUNT</span>
+      </p>
+      <p class="review-rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
+      <p class="review-recommend">✔️ Recommend <span class="logo-purple">JOB</span> <span class="logo-orange">HUNT</span></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id= "Contact"class="site-footer">
+    <div class="footer-grid"> 
+      <div class="footer-logo">
+        <h2><span class="logo-purple">Job </span><span class="logo-orange">Hunt</span></h2>
+        <p>Your trusted partner in career growth. We connect job seekers with top employers, providing a seamless job search experience.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Clients</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-follow">
+        <h3>Follow Us</h3>  
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <div>9884567890</div>
+        <div>123 Main Street,<br>Anytown, USA</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

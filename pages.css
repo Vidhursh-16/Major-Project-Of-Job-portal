@@ -1,0 +1,259 @@
+body {
+  background: linear-gradient(to right, #fcfcfc, #d8bfd8);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reusable box styling */
+section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px 30px;
+}
+
+/* Header box */
+.job-header {
+  text-align: center;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.badge.positions { background: #d1e7ff; color: #004085; }
+.badge.job-type { background: #e2f0d9; color: #155724; }
+.badge.salary { background: #fff3cd; color: #856404; }
+.badge.wfo { background: #f8d7da; color: #721c24; }
+.badge.experience { background: #e2d9f3; color: #3d087b; }
+
+.apply-btn {
+  background: #6a38c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* LinkedIn info */
+.linkedin-box {
+  text-align: center;
+}
+
+.linkedin-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.description {
+  color: #444;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.linkedin-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.review p {
+  margin: 4px 0;
+  color: #444;
+}
+
+.review p:nth-child(4),
+.review p:nth-child(5) {
+  color: #d9534f;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.benefits div {
+  text-align: center;
+}
+
+.benefits img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* Job Card */
+.job-card ul {
+  color: #555;
+  line-height: 1.6;
+}
+
+.job-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white; /* White header background */
+  padding: 15px 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.logo-purple { color: #6a38c2; }
+.logo-orange { color: #fd7e14; }
+
+/* Nav Menu (centered) */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: poppins, 'Segoe UI', Arial, sans-serif;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-menu a:hover {
+  background: #f0f0ff;
+  color: #6c48fa;
+}
+
+/* Register Button (right side) */
+.register-btn a {
+  background-color: #6a38c2;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  width: 200px;
+  margin-right: 100px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease-in-out;
+}
+
+.register-btn a:hover {
+  background-color: #5a2fab;
+}
+
+.job-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.job-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.job-card:hover {
+  transform: translateY(-5px);
+}
+.job-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.job-card h3 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.job-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.apply-btn {
+  display: inline-block;
+  background-color: #6a38c2;
+  color: white;
+  padding: 8px 20px;
+  margin-top: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.apply-btn:hover {
+  background-color: #5a2fab;
+}
+
+
+

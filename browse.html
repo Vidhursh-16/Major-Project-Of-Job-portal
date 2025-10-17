@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs</title>
+  <link rel="stylesheet" href="browse.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <span class="logo-purple">Job</span><span class="logo-orange">Hunt</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#jobs">Jobs</a></li>
+      <li><a href="index.html#service">Service</a></li>
+      <li><a href="index.html#client">Clients</a></li>
+    </ul>
+    <a class="register-btn" href="register.html">Register</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-browse">
+    <h1>Browse <span class="logo-purple">Job Listings</span></h1>
+    <p>Find the latest opportunities tailored for your skills and career goals.</p>
+  </section>
+
+  <!-- Job Cards -->
+  <section class="job-results" id="job-results">
+    <p>Loading job listings...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <h2><span class="logo-purple">Job</span><span class="logo-orange">Hunt</span></h2>
+        <p>Your trusted partner in career growth. We connect job seekers with top employers.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#jobs">Jobs</a>
+        <a href="index.html#service">Service</a>
+      </div>
+
+      <div class="footer-follow">
+        <h3>Follow Us</h3>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>📞 +91 98845 67890</p>
+        <p>📍 123 Main Street, Chennai, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Fetch job data from Flask backend
+    async function loadJobs() {
+      const container = document.getElementById("job-results");
+      container.innerHTML = "<p>⏳ Loading jobs...</p>";
+      try {
+        const response = await fetch("http://127.0.0.1:5000/jobs");
+        const data = await response.json();
+        container.innerHTML = "";
+        data.forEach(job => {
+          container.innerHTML += `
+            <div class="job-card">
+              <div class="job-icon"><img src="${job.image}" alt="logo"></div>
+              <h3>${job.title}</h3>
+              <p><strong>Company:</strong> ${job.company}</p>
+              <p><strong>Location:</strong> ${job.location}</p>
+              <p><strong>Salary:</strong> ${job.salary}</p>
+              <p>${job.description}</p>
+              <a href="${job.link}" class="apply-btn" target="_blank">Apply Now</a>
+            </div>`;
+        });
+      } catch (err) {
+        container.innerHTML = "<p>⚠️ Failed to load jobs. Please try again later.</p>";
+      }
+    }
+
+    loadJobs();
+  </script>
+</body>
+</html>

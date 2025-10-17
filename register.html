@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - JobHunt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-purple">Job</span><span class="logo-orange">Hunt</span>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Jobs</a></li>
+        <li><a href="register.html" class="register-btn">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Section -->
+  <section class="hero" style="background-color:#f9f9ff;">
+    <h1>Register Your <span class="highlights">Job Seeker</span> Account</h1>
+    <p>Please fill in your details to create your profile.</p>
+
+    <div class="step-card" style="max-width: 480px; margin: 0 auto; text-align: left;">
+      <form id="register-form" style="display:flex; flex-direction:column; gap:16px;">
+        <label>Full Name</label>
+        <input type="text" name="fullname" required placeholder="Enter your full name" style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Aadhar Card Number</label>
+        <input type="text" name="aadhar" maxlength="12" required placeholder="Enter 12-digit Aadhar number" style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="Enter your 10-digit phone number" style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Email Address</label>
+        <input type="email" name="email" required placeholder="Enter your email address" style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Age</label>
+        <input type="number" name="age" required min="18" max="65" placeholder="Enter your age" style="padding:10px;border-radius:6px;border:1px solid #ccc;">
+
+        <label>Address</label>
+        <textarea name="address" rows="3" placeholder="Enter your address" style="padding:10px;border-radius:6px;border:1px solid #ccc;"></textarea>
+
+        <label>Upload Resume (optional)</label>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx" style="padding:8px;">
+
+        <button type="submit" class="Browse-job-btn" style="width:100%;margin-top:10px;">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <span class="logo"><span class="logo-purple">Job</span><span class="logo-orange">Hunt</span></span>
+        <p>Your trusted platform to connect talent with opportunity.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
